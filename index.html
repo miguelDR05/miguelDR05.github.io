@@ -402,8 +402,8 @@
                     </div>
                 </div>
             </div>
-    
-            <form method="post" class="contact-form" id="contactUs-Form">
+
+            <!-- <form method="post" class="contact-form" id="contactUs-Form">
                     
                 <input type="text" name="name" class="box" id="name" placeholder="Nombre" required />
                 <input type="email" name="email" class="box" id="email" placeholder="Correo " required />
@@ -413,7 +413,27 @@
                 
                 <span class="alert" id="msg"></span>
                 
+            </form> -->
+            
+            <!-- Formulario de contacto -->
+            <form action="https://formsubmit.co/miguel05.dev@gmail.com" method="POST" class="contact-form">
+            <!-- Oculta la respuesta spam de bots -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Redirección personalizada tras envío -->
+                <input type="hidden" name="_next" value="https://migueldr05.github.io/#contacto-gracias">
+
+                <input type="text" name="name" class="box" id="name" placeholder="Nombre" required />
+
+                <input type="email" name="email" class="box" id="email" placeholder="Correo " required />
+
+                <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="Mensaje" required></textarea>
+
+                <input type="text" name="_honey" style="display:none">
+
+                <button class="btn" type="submit">enviar mensaje</button>
             </form>
+
             
         </div>
 
