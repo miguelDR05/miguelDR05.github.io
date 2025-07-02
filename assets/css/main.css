@@ -22,17 +22,17 @@
 /*--------------------- 0- Global CSS (Start) ---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root{
+:root {
     --purple: #54d2d2;
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -40,52 +40,52 @@
     border: none;
     outline: none;
     -webkit-transition: all 0.2s linear;
-       -moz-transition: all 0.2s linear;
-         -o-transition: all 0.2s linear;
-  	        transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
-*::selection{
+*::selection {
     color: var(--white);
     background-color: var(--purple);
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
 
-body{
+body {
     background-color: var(--black);
 }
 
-section{
+section {
     padding: 2rem 5%;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0.8rem;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background-color: var(--purple);
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: var(--black);
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     height: 1rem;
     width: 1rem;
     border-radius: 50rem;
     background-color: var(--grey);
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     width: 3rem;
     background: var(--purple);
 }
@@ -95,27 +95,28 @@ section{
 
 
 /*--------------------- 1- Heading CSS (Start) ---------------------*/
-.heading{
+.heading {
     margin-bottom: 2rem;
 }
 
-.heading h2{
+.heading h2 {
     text-align: center;
     padding-bottom: 2rem;
-    color:var(--purple);
+    color: var(--purple);
     font-size: 4rem;
 }
 
-.heading h2 span{
+.heading h2 span {
     position: relative;
     z-index: 0;
     color: var(--white);
 }
 
-.heading h2 span::before{
+.heading h2 span::before {
     content: '';
     position: absolute;
-    bottom: -0.5rem; left: 0;
+    bottom: -0.5rem;
+    left: 0;
     z-index: -1;
     background: var(--purple);
     height: 0.2rem;
@@ -128,7 +129,7 @@ section{
 
 
 /*--------------------- 2- Button CSS (Start) ---------------------*/
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
@@ -137,11 +138,11 @@ section{
     border: 0.2rem solid var(--purple);
 }
 
-.btn i{
+.btn i {
     padding-left: 1rem;
 }
 
-.btn:hover{
+.btn:hover {
     color: var(--white);
     background-color: var(--purple);
     cursor: pointer;
@@ -152,7 +153,7 @@ section{
 
 
 /*--------------------- 3- Header Area CSS (Start) ---------------------*/
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -169,18 +170,18 @@ header{
     align-items: center;
     background: transparent;
     -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
     z-index: 999;
 }
 
-header.sticky{
+header.sticky {
     border-bottom: 0.1rem solid var(--grey);
     background: rgb(0, 0, 0);
 }
 
-header .logo h2{
+header .logo h2 {
     font-size: 2.5rem;
     font-weight: 900;
     color: var(--purple);
@@ -188,34 +189,34 @@ header .logo h2{
     letter-spacing: 0.2rem;
 }
 
-header .navbar a{
+header .navbar a {
     color: var(--white);
     font-size: 1.8rem;
     margin-left: 1rem;
 }
 
 header .navbar a:hover,
-header .navbar a.active{
+header .navbar a.active {
     color: var(--purple);
 }
 
-header #menu-btn{
+header #menu-btn {
     font-size: 3rem;
     color: var(--white);
     cursor: pointer;
     -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
     display: none;
 }
 
-header .fa-times{
+header .fa-times {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
-header #menu-btn:hover{
+header #menu-btn:hover {
     color: var(--purple);
 }
 
@@ -224,13 +225,13 @@ header #menu-btn:hover{
 
 
 /*--------------------- 4- Home Area CSS (Start) ---------------------*/
-.home{
+.home {
     padding: 0rem 5%;
     background-color: var(--black);
     min-height: 100vh;
 }
 
-.home .box-container{
+.home .box-container {
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -246,25 +247,25 @@ header #menu-btn:hover{
     gap: 4rem;
 }
 
-.home .image{
+.home .image {
     text-align: center;
     -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
 
 }
 
-.home .image img{
+.home .image img {
     height: 40rem;
     width: 40rem;
-    border-radius: 50% 50% 50% 50% / 30% 30% 70% 70% ;
-    object-fit:cover;
+    border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+    object-fit: cover;
 }
 
-.home .content{
+.home .content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
-        flex: 1 1 40rem;
+    flex: 1 1 40rem;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -281,37 +282,38 @@ header #menu-btn:hover{
     margin-top: 7rem;
 }
 
-.home .content h2{
+.home .content h2 {
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--purple);
 }
 
-.home .content h1{
+.home .content h1 {
     font-size: 4rem;
     color: var(--white);
     padding: 1rem 0;
     text-transform: none;
 }
 
-.home .content h1 span{
+.home .content h1 span {
     color: var(--purple);
 
 }
 
-.home .content p{
+.home .content p {
     font-size: 1.7rem;
     font-weight: 400;
     color: var(--white);
     padding-bottom: 2rem;
     line-height: 1.5;
 }
+
 /*--------------------- 4- Home Area CSS (End) ---------------------*/
 
 
 
 /*--------------------- 5- About Area CSS (Start) ---------------------*/
-.about .box-container{
+.about .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -324,42 +326,42 @@ header #menu-btn:hover{
     padding: 2rem 0;
 }
 
-.about .image{
+.about .image {
     width: 32rem;
     text-align: center;
 }
 
-.about .image img{
+.about .image img {
     width: 100%;
     border: 1rem solid var(--purple);
 }
 
-.about .content{
+.about .content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 55rem;
-        flex: 1 1 55rem;
+    flex: 1 1 55rem;
 }
 
-.about .content h2{
+.about .content h2 {
     font-size: 3rem;
     color: var(--white);
     padding-bottom: 1rem;
 }
 
-.about .content > p{
+.about .content>p {
     font-size: 1.6rem;
     color: var(--grey);
     line-height: 1.6;
     padding-bottom: 1rem;
 }
 
-.about .content .about-info{
+.about .content .about-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-        justify-content: flex-start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -368,32 +370,32 @@ header #menu-btn:hover{
     gap: 1rem;
 }
 
-.about .content .about-info .info{
+.about .content .about-info .info {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 15rem;
-        flex: 1 1 15rem;
+    flex: 1 1 15rem;
 }
 
-.about .content .about-info .info h4{
+.about .content .about-info .info h4 {
     font-size: 1.6rem;
     color: var(--white);
     padding-bottom: 1rem;
 }
 
-.about .content .about-info .info span{
+.about .content .about-info .info span {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--grey);
 }
 
-.about .content .about-info .info .btn{
+.about .content .about-info .info .btn {
     margin-top: 1rem;
 }
 
-.counting{
+.counting {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 35rem;
-        flex: 1 1 35rem;
+    flex: 1 1 35rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -404,102 +406,102 @@ header #menu-btn:hover{
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.counting .box{
+.counting .box {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 18rem;
-        flex: 1 1 18rem;
+    flex: 1 1 18rem;
     text-align: center;
     background-color: #222;
     padding: 2rem;
 }
 
-.counting .box .count{
+.counting .box .count {
     font-size: 3.5rem;
     color: var(--purple);
     padding-bottom: 0.5rem;
 }
 
-.counting .box h3{
+.counting .box h3 {
     font-size: 1.8rem;
     color: var(--white);
 }
 
-.skill-container{
+.skill-container {
     padding: 2rem 0;
 }
 
-.skills{
+.skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.skill-item{
+.skill-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 30rem;
-        flex: 1 1 30rem;
+    flex: 1 1 30rem;
     margin-right: 1.5rem;
 }
 
-.skill-item .box{
-    padding:1rem 0;
+.skill-item .box {
+    padding: 1rem 0;
 }
 
- .skill-item .box h3{
+.skill-item .box h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    padding:.7rem 0;
+    padding: .7rem 0;
     font-size: 1.7rem;
     color: var(--white);
     font-weight: 400;
 }
 
- .skill-item .box .progress-bar{
-    width:100%;
-    background:#222;
-    overflow:hidden;
-    height:1rem;
+.skill-item .box .progress-bar {
+    width: 100%;
+    background: #222;
+    overflow: hidden;
+    height: 1rem;
     border-radius: 50rem;
 }
 
- .skill-item .box .progress-bar span{
-    display:block;
-    height:100%;
+.skill-item .box .progress-bar span {
+    display: block;
+    height: 100%;
     background: var(--purple);
 }
 
- .skill-item.item1 .box:nth-child(1) .progress-bar span{
-    width:95%;
+.skill-item.item1 .box:nth-child(1) .progress-bar span {
+    width: 95%;
 }
 
- .skill-item.item1 .box:nth-child(2) .progress-bar span{
-    width:90%;
+.skill-item.item1 .box:nth-child(2) .progress-bar span {
+    width: 90%;
 }
 
- .skill-item.item1 .box:nth-child(3) .progress-bar span{
-    width:85%;
+.skill-item.item1 .box:nth-child(3) .progress-bar span {
+    width: 85%;
 }
 
-.skill-item.item2 .box:nth-child(1) .progress-bar span{
-    width:75%;
+.skill-item.item2 .box:nth-child(1) .progress-bar span {
+    width: 75%;
 }
 
- .skill-item.item2 .box:nth-child(2) .progress-bar span{
-    width:65%;
+.skill-item.item2 .box:nth-child(2) .progress-bar span {
+    width: 65%;
 }
 
- .skill-item.item2 .box:nth-child(3) .progress-bar span{
-    width:60%;
+.skill-item.item2 .box:nth-child(3) .progress-bar span {
+    width: 60%;
 }
 
 /*--------------------- 5- About Area CSS (End) ---------------------*/
@@ -507,7 +509,7 @@ header #menu-btn:hover{
 
 
 /*--------------------- 6- Qualification Area CSS (Start) ---------------------*/
-.qualification .box-container{
+.qualification .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -522,43 +524,44 @@ header #menu-btn:hover{
     gap: 4rem;
 }
 
-.education, .experience{
+.education,
+.experience {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
-        flex: 1 1 40rem;
+    flex: 1 1 40rem;
 }
 
-.experience-item{
+.experience-item {
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
-        flex: 1 1 40rem;
+    flex: 1 1 40rem;
     padding: 0 3rem 2rem 3rem;
     border-left: 0.2rem solid var(--purple);
     margin-left: 2rem;
 }
 
-.experience-item i{
+.experience-item i {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: -2.5rem;
-    height:5rem;
+    height: 5rem;
     width: 5rem;
     border-radius: 50%;
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:var(--white);
-    background:var(--purple);
+    color: var(--white);
+    background: var(--purple);
 }
 
-.experience-item .content{
+.experience-item .content {
     border-radius: 0.5rem;
     padding: 1rem 2rem;
     border-left: 2rem;
 }
 
-.experience-item span{
+.experience-item span {
     background: #222;
     color: var(--white);
     padding: 0.5rem 1.5rem;
@@ -566,13 +569,13 @@ header #menu-btn:hover{
     border-radius: 50rem;
 }
 
-.experience-item h3{
+.experience-item h3 {
     font-size: 2.5rem;
     color: var(--white);
     padding: 2rem 0;
 }
 
-.experience-item p{
+.experience-item p {
     color: var(--grey);
     font-size: 1.6rem;
     line-height: 2.5rem;
@@ -583,7 +586,7 @@ header #menu-btn:hover{
 
 
 /*--------------------- 7- Services Area CSS (Start) ---------------------*/
-.service .box-container{
+.service .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -598,43 +601,43 @@ header #menu-btn:hover{
     gap: 1.5rem;
 }
 
-.service-item{
+.service-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 33rem;
-        flex: 1 1 33rem;
+    flex: 1 1 33rem;
     background-color: var(--black);
     padding: 4rem 3rem;
     text-align: center;
-    border: 0.1rem solid rgba(255,255, 255, 0.3);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
     border-radius: 0.5rem;
     -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
-.service-item:hover{
+.service-item:hover {
     background-color: var(--purple);
 }
 
-.service-item i{
+.service-item i {
     color: var(--white);
     font-size: 4rem;
 }
 
-.service-item h3{
+.service-item h3 {
     font-size: 2rem;
     color: var(--white);
     padding: 1.5rem 0;
 }
 
-.service-item p{
+.service-item p {
     font-size: 1.6rem;
     color: var(--grey);
     line-height: 1.6;
 }
 
-.service-item:hover p{
+.service-item:hover p {
     color: var(--white);
 }
 
@@ -643,7 +646,7 @@ header #menu-btn:hover{
 
 
 /*--------------------- 8- Portfolio Area CSS (Start) ---------------------*/
-.controls{
+.controls {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -659,39 +662,39 @@ header #menu-btn:hover{
     margin-top: 2rem;
 }
 
-.controls .button{
+.controls .button {
     cursor: pointer;
     margin: 0.5rem;
 }
 
-.controls .button.active{
+.controls .button.active {
     cursor: pointer;
     background-color: var(--purple);
     color: var(--white);
 }
 
-.portfolio .box-container{
+.portfolio .box-container {
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     gap: 0.5rem;
-    padding: 2rem 0; 
+    padding: 2rem 0;
 }
 
-.portfolio-item{
+.portfolio-item {
     border-radius: 0.5rem;
     height: 25rem;
     overflow: hidden;
     position: relative;
 }
 
-.portfolio-item img{
+.portfolio-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio-item .content{
+.portfolio-item .content {
     content: '';
     position: absolute;
     top: 10%;
@@ -711,117 +714,120 @@ header #menu-btn:hover{
     align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
 }
 
-.portfolio-item .content h4{
+.portfolio-item .content h4 {
     font-size: 2rem;
     font-weight: bold;
     color: var(--purple);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
-            transform: translateY(-10rem);
+    transform: translateY(-10rem);
     opacity: 0;
     padding-bottom: 1rem;
     -webkit-transition: all 0.4s linear;
-       -moz-transition: all 0.4s linear;
-         -o-transition: all 0.4s linear;
-            transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 
-.portfolio-item .content p{
+.portfolio-item .content p {
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--white);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
-            transform: translateY(-10rem);
+    transform: translateY(-10rem);
     opacity: 0;
     -webkit-transition: all 0.4s linear;
-       -moz-transition: all 0.4s linear;
-         -o-transition: all 0.4s linear;
-            transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 
-.portfolio-item .content .view-btn{
+.portfolio-item .content .view-btn {
     font-size: 2rem;
     color: var(--purple);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
-            transform: translateY(-10rem);
+    transform: translateY(-10rem);
     opacity: 0;
     -webkit-transition: all 0.4s linear;
-       -moz-transition: all 0.4s linear;
-         -o-transition: all 0.4s linear;
-            transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
     border-radius: 5rem;
     margin-top: 1.5rem;
 }
 
-.portfolio-item:hover .content{
+.portfolio-item:hover .content {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
 }
 
-.portfolio-item:hover .content h4{
+.portfolio-item:hover .content h4 {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
-.portfolio-item:hover .content p{
+.portfolio-item:hover .content p {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
-.portfolio-item:hover .content .view-btn{
+.portfolio-item:hover .content .view-btn {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
-.portfolio-item:hover img{
+.portfolio-item:hover img {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /*CSS3 Animation Effects for Magnific Popup*/
 
 /* start state */
-.mfp-newspaper  .mfp-with-anim {
+.mfp-newspaper .mfp-with-anim {
     opacity: 0;
-    -webkit-transition: all 0.2s ease-in-out; 
-            transition: all 0.2s ease-in-out; 
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     -webkit-transform: scale(0) rotate(500deg);
-            transform: scale(0) rotate(500deg);
+    transform: scale(0) rotate(500deg);
 }
+
 .mfp-newspaper.mfp-bg {
     opacity: 0;
-    -webkit-transition: all 0.2s ease-in-out; 
-            transition: all 0.2s ease-in-out; 
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
-  
+
 /* animate in */
 .mfp-newspaper.mfp-ready .mfp-with-anim {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
 }
+
 .mfp-newspaper.mfp-ready.mfp-bg {
     opacity: 0.8;
 }
-  
+
 /* animate out */
 .mfp-newspaper.mfp-removing .mfp-with-anim {
     -webkit-transform: scale(0) rotate(500deg);
-            transform: scale(0) rotate(500deg);
+    transform: scale(0) rotate(500deg);
     opacity: 0;
 }
+
 .mfp-newspaper.mfp-removing.mfp-bg {
     opacity: 0;
 }
@@ -832,54 +838,54 @@ header #menu-btn:hover{
 
 
 /*--------------------- 9- Testimonials Area CSS (Start) ---------------------*/
-.testimonial-slider{
+.testimonial-slider {
     position: relative;
     padding-bottom: 4rem;
     overflow: hidden;
 }
 
-.testi-item{
+.testi-item {
     text-align: center;
     border: 0.1rem solid var(--grey);
     border-radius: 0.5rem;
     padding: 4rem 2rem;
 }
 
-.testi-item:hover{
+.testi-item:hover {
     border-color: var(--purple);
 }
 
-.testi-item img{
+.testi-item img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
     border: 0.5rem solid var(--white);
 }
 
-.testi-item .fa-quote-left{
+.testi-item .fa-quote-left {
     display: block;
     font-size: 3rem;
     color: var(--white);
     margin: 1rem 0;
 }
 
-.testi-item p{
+.testi-item p {
     color: var(--grey);
     font-size: 1.5rem;
     line-height: 1.5;
 }
 
-.testi-item .intro{
+.testi-item .intro {
     margin: 1rem 0;
 }
 
-.testi-item .intro h3{
+.testi-item .intro h3 {
     font-size: 2rem;
     color: var(--white);
     padding-bottom: 0.5rem;
 }
 
-.testi-item .intro h5{
+.testi-item .intro h5 {
     color: var(--purple);
     font-size: 1.4rem;
     font-weight: 400;
@@ -890,40 +896,40 @@ header #menu-btn:hover{
 
 
 /*--------------------- 10- Blog Area CSS (Start) ---------------------*/
-.blog-slider{
+.blog-slider {
     position: relative;
     padding-bottom: 4rem;
     overflow: hidden;
 }
 
-.blog-item{
+.blog-item {
     background-color: #222;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     overflow: hidden;
 }
 
-.blog-item .image{
+.blog-item .image {
     height: 25rem;
     overflow: hidden;
 }
 
-.blog-item:hover .image img{
+.blog-item:hover .image img {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.blog-item .image img{
+.blog-item .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.blog-item .content{
+.blog-item .content {
     padding: 2rem 1rem;
 }
 
-.blog-item .content .intro{
+.blog-item .content .intro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -935,32 +941,32 @@ header #menu-btn:hover{
     margin-bottom: 1.5rem;
 }
 
-.blog-item .content .intro h5{
+.blog-item .content .intro h5 {
     font-size: 1.5rem;
 }
 
-.blog-item .content .intro h5 i{
+.blog-item .content .intro h5 i {
     color: var(--purple);
     padding-right: 0.5rem;
 }
 
-.blog-item .content .intro h5 span{
+.blog-item .content .intro h5 span {
     color: var(--grey);
 }
 
-.blog-item .content .main-heading{
+.blog-item .content .main-heading {
     font-size: 2rem;
     font-weight: bold;
     color: var(--white);
 }
 
-.blog-item p{
+.blog-item p {
     padding: 1rem 0;
     font-size: 1.6rem;
     color: var(--grey);
 }
 
-.blog-item .btn{
+.blog-item .btn {
     margin-top: 1rem;
 }
 
@@ -969,14 +975,14 @@ header #menu-btn:hover{
 
 
 /*--------------------- 11- Contact Area CSS (Start) ---------------------*/
-.contact .alert{
+.contact .alert {
     font-size: 2rem;
     color: var(--purple);
     border-radius: 0.5rem;
     padding-left: 1rem;
 }
 
-.contact .box-container{
+.contact .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -991,39 +997,39 @@ header #menu-btn:hover{
     gap: 2rem;
 }
 
-.contact-info{
+.contact-info {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 42rem;
-        flex: 1 1 42rem;
+    flex: 1 1 42rem;
 }
 
-.contact-info h3{
+.contact-info h3 {
     font-size: 3rem;
     color: var(--white);
 }
 
-.contact-info > p{
+.contact-info>p {
     font-size: 1.6rem;
     color: var(--grey);
     padding: 0.5rem 0;
 }
 
-.contact-info .info-item{
+.contact-info .info-item {
     padding: 1rem 0;
 }
 
 .contact-info .info-item .gmail,
 .contact-info .info-item .linkedin,
-.contact-info .info-item .github{
+.contact-info .info-item .github {
     text-transform: none;
 }
 
-.contact-info .info-item h4{
+.contact-info .info-item h4 {
     font-size: 1.8rem;
     color: var(--white);
 }
 
-.contact-info .info-item .detail{
+.contact-info .info-item .detail {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1033,12 +1039,13 @@ header #menu-btn:hover{
 }
 
 .contact-info .info-item .detail .fas,
-.contact-info .info-item .detail .fab{
+.contact-info .info-item .detail .fab {
     border-radius: 50%;
     color: var(--purple);
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;;
+    display: flex;
+    ;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1048,20 +1055,20 @@ header #menu-btn:hover{
     font-size: 1.5rem;
 }
 
-.contact-info .info-item .detail p{
+.contact-info .info-item .detail p {
     font-size: 1.6rem;
     color: var(--grey);
     line-height: 1.6;
     padding-left: 1rem;
 }
 
-.contact-form{
+.contact-form {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 42rem;
-        flex: 1 1 42rem;
+    flex: 1 1 42rem;
 }
 
-.contact-form .box{
+.contact-form .box {
     width: 100%;
     text-transform: none;
     color: var(--grey);
@@ -1072,20 +1079,20 @@ header #menu-btn:hover{
     background-color: #222;
 }
 
-.contact-form .box:focus{
+.contact-form .box:focus {
     border-color: var(--white);
 }
 
-.contact-form .box::placeholder{
+.contact-form .box::placeholder {
     color: var(--grey);
 }
 
-.contact-form textarea{
+.contact-form textarea {
     height: 15rem;
     resize: none;
 }
 
-.contact-form .btn{
+.contact-form .btn {
     margin-top: 1rem;
 }
 
@@ -1094,13 +1101,13 @@ header #menu-btn:hover{
 
 
 /*--------------------- 12- Footer Area CSS (Start) ---------------------*/
-footer{
+footer {
     background-color: var(--purple);
     padding: 0.8rem 0;
     text-align: center;
 }
 
-footer .social{
+footer .social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1110,7 +1117,7 @@ footer .social{
     padding: 2rem 0;
 }
 
-footer .social .fab{
+footer .social .fab {
     background-color: var(--black);
     border-radius: 50%;
     height: 4rem;
@@ -1129,17 +1136,17 @@ footer .social .fab{
     margin: 0 0.5rem;
 }
 
-footer .social .fab:hover{
+footer .social .fab:hover {
     color: var(--black);
     background-color: var(--white);
 }
 
-footer .content p{
+footer .content p {
     font-size: 2rem;
     color: var(--white);
 }
 
-footer .content p span{
+footer .content p span {
     color: var(--black);
 }
 
@@ -1148,14 +1155,14 @@ footer .content p span{
 
 
 /*--------------------- 13- Scroll-Top (Start) ---------------------*/
-.scroll-top{
+.scroll-top {
     position: fixed;
     bottom: 1rem;
-    right:1rem;
+    right: 1rem;
     height: 5rem;
     width: 5rem;
     font-size: 3rem;
-    font-weight:lighter;
+    font-weight: lighter;
     background: var(--black);
     color: var(--white);
     border: 0.2rem solid var(--white);
@@ -1174,11 +1181,129 @@ footer .content p span{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
+}
 
-  .scroll-top:hover{
+.scroll-top:hover {
     background: var(--white);
-    color:var(--black);
-  }
+    color: var(--black);
+}
 
 /*--------------------- 13- Scroll-Top (End) ---------------------*/
+
+
+
+/*--------------------- Modal Thanks Contacting (Start) ---------------------*/
+.modal {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: inherit;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*--------------------- Modal Thanks Contacting (End) ---------------------*/
+
+
+
+/*--------------------- Skills Carousel (Start) ---------------------*/
+.skill-carousel {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: var(--primary);
+    /* usa tu color principal */
+}
+
+/* Pista horizontal con scroll y snap */
+.skill-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 12px;
+    scrollbar-width: thin;
+    /* Firefox */
+    justify-content: center;
+}
+
+.skill-track::-webkit-scrollbar {
+    height: 6px;
+}
+
+.skill-track::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+.skill-card {
+    display: flex;
+    flex: 0 0 140px;
+    /* ancho “tarjeta” */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    color: #fff;
+    border-radius: 14px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.skill-card i,
+.skill-card .custom-icon {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+
+.custom-icon {
+    /* para SVG locales */
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/*--------------------- Modal Thanks Contacting(End) ---------------------*/
