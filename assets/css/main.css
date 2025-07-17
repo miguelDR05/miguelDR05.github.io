@@ -36,7 +36,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     border: none;
     outline: none;
     -webkit-transition: all 0.2s linear;
@@ -185,8 +185,7 @@ header .logo h2 {
     font-size: 2.5rem;
     font-weight: 900;
     color: var(--purple);
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 header .navbar a {
@@ -1247,36 +1246,56 @@ footer .content p span {
 
 /* Pista horizontal con scroll y snap */
 .skill-track {
-    display: flex;
-    gap: 24px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
     padding: 0 12px;
-    scrollbar-width: thin;
-    /* Firefox */
-    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
 }
 
-.skill-track::-webkit-scrollbar {
-    height: 6px;
+
+@media (max-width: 1200px) {
+    .skill-track {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
 }
 
-.skill-track::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 3px;
+@media (max-width: 900px) {
+    .skill-track {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skill-track {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 4px;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill-track {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
 }
 
 .skill-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* Hace la tarjeta cuadrada */
     display: flex;
-    flex: 0 0 140px;
-    /* ancho “tarjeta” */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #111;
     color: #fff;
     border-radius: 14px;
-    padding: 32px 24px;
+    padding: 24px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
     transition: transform .35s ease, box-shadow .35s ease;
 }
@@ -1288,13 +1307,13 @@ footer .content p span {
 
 .skill-card i,
 .skill-card .custom-icon {
-    font-size: 48px;
+    font-size: 80px;
     line-height: 1;
     margin-bottom: 12px;
 }
 
 .skill-card h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: .3px;
 }
