@@ -441,68 +441,6 @@ header #menu-btn:hover {
     flex-wrap: wrap;
 }
 
-.skill-item {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 30rem;
-    flex: 1 1 30rem;
-    margin-right: 1.5rem;
-}
-
-.skill-item .box {
-    padding: 1rem 0;
-}
-
-.skill-item .box h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .7rem 0;
-    font-size: 1.7rem;
-    color: var(--white);
-    font-weight: 400;
-}
-
-.skill-item .box .progress-bar {
-    width: 100%;
-    background: #222;
-    overflow: hidden;
-    height: 1rem;
-    border-radius: 50rem;
-}
-
-.skill-item .box .progress-bar span {
-    display: block;
-    height: 100%;
-    background: var(--purple);
-}
-
-.skill-item.item1 .box:nth-child(1) .progress-bar span {
-    width: 95%;
-}
-
-.skill-item.item1 .box:nth-child(2) .progress-bar span {
-    width: 90%;
-}
-
-.skill-item.item1 .box:nth-child(3) .progress-bar span {
-    width: 85%;
-}
-
-.skill-item.item2 .box:nth-child(1) .progress-bar span {
-    width: 75%;
-}
-
-.skill-item.item2 .box:nth-child(2) .progress-bar span {
-    width: 65%;
-}
-
-.skill-item.item2 .box:nth-child(3) .progress-bar span {
-    width: 60%;
-}
-
 /*--------------------- 5- About Area CSS (End) ---------------------*/
 
 
@@ -855,10 +793,12 @@ header #menu-btn:hover {
 }
 
 .testi-item img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    border: 0.5rem solid var(--white);
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .testi-item .fa-quote-left {
@@ -1279,13 +1219,12 @@ footer .content p span {
 
 @media (max-width: 400px) {
     .skill-track {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
 }
 
 .skill-card {
-    width: 100%;
     aspect-ratio: 1 / 1;
     /* Hace la tarjeta cuadrada */
     display: flex;
@@ -1320,9 +1259,9 @@ footer .content p span {
 
 .custom-icon {
     /* para SVG locales */
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
+    width: 100%;
+    height: 80px;
+    /* object-fit: contain; */
 }
 
 /*--------------------- Modal Thanks Contacting(End) ---------------------*/
