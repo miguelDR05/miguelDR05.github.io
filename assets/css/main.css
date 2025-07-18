@@ -957,6 +957,11 @@ header #menu-btn:hover {
     padding: 1rem 0;
 }
 
+.contact-info .info-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .contact-info .info-item .gmail,
 .contact-info .info-item .linkedin,
 .contact-info .info-item .github {

@@ -308,35 +308,44 @@
                 <p>Puede ponerse en contacto conmigo a traves de las siguientes redes sociales y numero de telefono.</p>
 
                 <div class="info-item">
-                    <h4>teléfono:</h4>
+                    <h4>Teléfono:</h4>
 
                     <div class="detail">
                         <div class="fas fa-phone"></div>
-                        <p>+51-912-096-964</p>
+                        <p>
+                            <a href="https://wa.me/51912096964" target="_blank">+51-912-096-964</a>
+                        </p>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <h4>correo electrónico:</h4>
+                    <h4>Correo electrónico:</h4>
                     <div class="detail">
                         <div class="fas fa-envelope"></div>
-                        <p class="gmail">geralon19@gmail.com</p>
+                        <p class="gmail">
+                            <a href="mailto:miguel05.dev@gmail.com" target="_blank">miguel05.dev@gmail.com</a>
+                        </p>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <h4>linkedin:</h4>
+                    <h4>Linkedin:</h4>
                     <div class="detail">
                         <div class="fab fa-linkedin"></div>
-                        <p class="linkedin">https://www.linkedin.com/in/miguel-delgado-ruiz-52b41027a</p>
+                        <p class="linkedin">
+                            <a href="https://www.linkedin.com/in/miguel-delgado-ruiz-52b41027a" target="_blank">Miguel
+                                Delgado Ruiz</a>
+                        </p>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <h4>github:</h4>
+                    <h4>Github:</h4>
                     <div class="detail">
                         <div class="fab fa-github"></div>
-                        <p class="github">https://github.com/miguelDR05</p>
+                        <p class="github">
+                            <a href="https://github.com/miguelDR05" target="_blank">miguelDR05</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -415,8 +424,18 @@
 
     <!-- Typed Script -->
     <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const sectionId = this.getAttribute('href').replace('#', '');
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    e.preventDefault();
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    // Opcional: Actualiza el título o el estado si lo necesitas
+                }
+            });
+        });
         var typed = new Typed('.typing-text', {
-
             strings: ['Desarrollador Full Stack'],
             typeSpeed: 120,
             loop: true
